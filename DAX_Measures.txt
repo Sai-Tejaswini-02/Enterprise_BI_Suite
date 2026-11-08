@@ -1,0 +1,37 @@
+-- 1. Total Revenue
+Total Revenue = SUM(FactInternetSales[SalesAmount])
+
+-- 2. Total Orders
+Total Orders = DISTINCTCOUNT(FactInternetSales[SalesOrderNumber])
+
+-- 3. Total Quantity Sold
+Total Quantity Sold = SUM(FactInternetSales[OrderQuantity])
+
+-- 4. Total Sales Lines
+Total Sales Lines = COUNTROWS(FactInternetSales)
+
+-- 5. Total Cost
+Total Cost = SUM(FactInternetSales[TotalProductCost])
+
+-- 6. Total Profit
+Total Profit = [Total Revenue] - [Total Cost]
+
+-- 7. Average Order Value
+Average Order Value = DIVIDE([Total Revenue], [Total Orders])
+
+-- 8. Profit Margin
+Profit Margin % = DIVIDE([Total Profit], [Total Revenue])
+
+-- 9. Sales by Due Date
+Sales by Due Date =
+CALCULATE(
+    [Total Revenue],
+    USERELATIONSHIP(FactInternetSales[DueDateKey], DimDate[DateKey])
+)
+
+-- 10. Sales by Ship Date
+Sales by Ship Date =
+CALCULATE(
+    [Total Revenue],
+    USERELATIONSHIP(FactInternetSales[ShipDateKey], DimDate[DateKey])
+)
