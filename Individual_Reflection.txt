@@ -1,0 +1,28 @@
+# Individual Reflection
+
+## Project: Enterprise BI Suite
+
+This project helped me understand how data analysis and business intelligence tools are used to analyse sales data and present useful information.
+
+As a fresher, I got an opportunity to practise SQL, Power Query, DAX, and Power BI using the AdventureWorksDW2025 dataset.
+
+I used SQL queries to explore the data and analyse sales performance. I also worked on data transformation, created relationships between tables, and developed DAX measures to calculate revenue, profit, orders, and other business metrics.
+
+Using Power BI, I created an Executive Overview dashboard with KPI cards and charts to present the sales information clearly. I also compared the results with SQL queries to check data accuracy.
+
+## What I Learned
+
+- Practised SQL queries, joins, and aggregations.
+- Understood data cleaning and transformation using Power Query.
+- Learned how to create relationships between tables.
+- Practised writing DAX measures.
+- Learned to create interactive dashboards using Power BI.
+- Understood the importance of checking data accuracy.
+
+## Challenges
+
+Initially, I found it challenging to understand table relationships and create DAX measures. By practising and checking the results, I gradually improved my understanding.
+
+## Conclusion
+
+Overall, this project was a good learning experience for me. It helped me improve my practical knowledge of SQL and Power BI and understand the basic steps involved in building a business intelligence project. I look forward to learning more and applying these skills to real-world projects.
